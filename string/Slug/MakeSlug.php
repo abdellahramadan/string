@@ -12,7 +12,6 @@ class MakeSlug
 
             foreach ($slugItem as $item) {
                 $sluggedText .=  $item . '-';
-
             }
 
             $finalSlug = strtolower(substr_replace($sluggedText, "", -1));
