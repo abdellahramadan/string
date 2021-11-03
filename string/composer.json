@@ -13,6 +13,5 @@
   },
   "autoload": {
     "psr-4": {"AbdellahRamadan\\String\\": ""}
-  },
-  "minimum-stability": "dev"
+  }
 }
