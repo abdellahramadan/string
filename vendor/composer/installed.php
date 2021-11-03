@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '0016f0dd1cba5a39d25be66f1e94c1ea97dc6818',
+    'reference' => 'f0021cd74b9ad1fb881191fec204e1e4b087805d',
     'name' => 'abdellahramadan/string',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '0016f0dd1cba5a39d25be66f1e94c1ea97dc6818',
+      'reference' => 'f0021cd74b9ad1fb881191fec204e1e4b087805d',
     ),
   ),
 );
