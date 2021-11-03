@@ -12,7 +12,7 @@
     "php": ">= 7.4"
   },
   "autoload": {
-    "psr-4": {"AbdellahRamadan\\String\\": "src/"}
+    "psr-4": {"AbdellahRamadan\\String\\": ""}
   },
   "minimum-stability": "dev"
 }
