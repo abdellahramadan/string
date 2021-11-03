@@ -1,6 +1,6 @@
 <?php
 
-namespace AbdellahRamadan\String;
+namespace AbdellahRamadan\String\Slug;
 
 class MakeSlug
 {
