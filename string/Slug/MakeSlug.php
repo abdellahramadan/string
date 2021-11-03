@@ -1,5 +1,6 @@
 <?php
 
+namespace AbdellahRamadan\String;
 
 class MakeSlug
 {
