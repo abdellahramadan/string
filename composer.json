@@ -7,12 +7,11 @@
       "email": "ramadanabdel24@gmail.com"
     }
   ],
-  "library": "library",
+  "type": "library",
   "require": {
     "php": ">= 7.4"
   },
   "autoload": {
-    "psr-4": {"AbdellahRamadan\\String\\": ""}
-  },
-  "minimum-stability": "dev"
+    "psr-4": {"AbdellahRamadan\\String\\": "string"}
+  }
 }

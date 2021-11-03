@@ -11,7 +11,7 @@ class MakeSlug
             $sluggedText = ' ';
 
             foreach ($slug as $item) {
-                $sluggedText . '-';
+                $sluggedText . $item . '-';
             }
 
             return $sluggedText;
