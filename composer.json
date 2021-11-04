@@ -12,6 +12,6 @@
     "php": ">= 7.4"
   },
   "autoload": {
-    "psr-4": {"AbdellahRamadan\\String\\": "string"}
+    "psr-4": {"AbdellahRamadan\\String\\": "src"}
   }
 }
