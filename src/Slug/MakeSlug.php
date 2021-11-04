@@ -4,7 +4,7 @@ namespace AbdellahRamadan\String\Slug;
 
 class MakeSlug
 {
-    public function slug(string $text = ''): string
+    public function slug(string $text = null): string
     {
         $slugItem = explode(" ", $text);
         if (count($slugItem) > 0) {
