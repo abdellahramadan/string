@@ -1,5 +1,5 @@
 <?php
-namespace App\String;
+namespace AbdellahRamadan\String;
 
 class Strings
 {
@@ -89,6 +89,10 @@ class Strings
         return lcfirst($text);
     }
 
+    /**
+     * @param string|null $text
+     * @return string
+     */
     public static function capitalize(string $text = null): string
     {
         $words = explode(" ", $text);
@@ -100,5 +104,47 @@ class Strings
         $result = implode(" ", $arrayOfWords);
 
         return $result;
+    }
+
+    /**
+     * @param string $haystack
+     * @param string|null $word
+     * @return bool
+     */
+    public static function contains(string $haystack, string $word = null): bool
+    {
+        if (str_contains($haystack, $word)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * @param string $haystack
+     * @param string|null $prefix
+     * @return string
+     */
+    public static function prefix(string $sentence, string $prefix = null): string
+    {
+        $originalString = explode(" ", $sentence);
+        $newString = explode(" ", $prefix);
+        $finalString = implode(" ", array_merge($newString, $originalString));
+
+        return $finalString;
+    }
+
+    /**
+     * @param string $sentence
+     * @param string|null $suffix
+     * @return string
+     */
+    public static function suffix(string $sentence, string $suffix = null): string
+    {
+        $originalString = explode(" ", $sentence);
+        $newString = explode(" ", $suffix);
+        $finalString = implode(" ", array_merge($originalString, $newString));
+
+        return $finalString;
     }
 }

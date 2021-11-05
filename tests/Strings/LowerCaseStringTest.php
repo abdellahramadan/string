@@ -3,7 +3,7 @@
 namespace App\Test\Strings;
 
 use PHPUnit\Framework\TestCase;
-use App\String\Strings;
+use AbdellahRamadan\String\Strings;
 
 class LowerCaseStringTest extends TestCase
 {

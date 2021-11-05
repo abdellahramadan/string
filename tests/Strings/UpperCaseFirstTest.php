@@ -3,7 +3,7 @@
 
 namespace App\Tests\Strings;
 
-use App\String\Strings;
+use AbdellahRamadan\String\Strings;
 use PHPUnit\Framework\TestCase;
 
 class UpperCaseFirstTest extends TestCase
