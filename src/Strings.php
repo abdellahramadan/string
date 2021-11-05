@@ -1,15 +1,18 @@
 <?php
+declare(strict_types = 1);
+
 namespace AbdellahRamadan\String;
 
 class Strings
 {
     /**
-     * @param string|null $text
+     * @param string $text
      * @return string
      */
-    public static function slug(string $text = null): string
+    public static function slug(string $text): string
     {
         $slugItem = explode(" ", $text);
+        $finalSlug = '';
         if (count($slugItem) > 0) {
             $sluggedText = '';
 
@@ -18,33 +21,34 @@ class Strings
             }
 
             $finalSlug = strtolower(substr_replace($sluggedText, "", -1));
-            return $finalSlug;
+
         }
+        return $finalSlug;
     }
 
     /**
-     * @param string|null $text
+     * @param string $text
      * @return string
      */
-    public static function lowercase(string $text = null): string
+    public static function lowercase(string $text): string
     {
         return strtolower($text);
     }
 
     /**
-     * @param string|null $text
+     * @param string $text
      * @return string
      */
-    public static function uppercase(string $text = null): string
+    public static function uppercase(string $text): string
     {
         return strtoupper($text);
     }
 
     /**
-     * @param string|null $text
+     * @param string $text
      * @return string
      */
-    public static function camelToSnakeCase(string $text = null): string
+    public static function camelToSnakeCase(string $text): string
     {
         $chars = str_split($text);
 
@@ -76,24 +80,24 @@ class Strings
     }
 
     /**
-     * @param string|null $text
+     * @param string $text
      * @return string
      */
-    public static function uppercaseFirst(string $text = null): string
+    public static function uppercaseFirst(string $text): string
     {
         return ucfirst($text);
     }
 
-    public static function lowercaseFirst(string $text = null): string
+    public static function lowercaseFirst(string $text): string
     {
         return lcfirst($text);
     }
 
     /**
-     * @param string|null $text
+     * @param string $text
      * @return string
      */
-    public static function capitalize(string $text = null): string
+    public static function capitalize(string $text): string
     {
         $words = explode(" ", $text);
         $arrayOfWords = array();
@@ -108,10 +112,10 @@ class Strings
 
     /**
      * @param string $haystack
-     * @param string|null $word
+     * @param string $word
      * @return bool
      */
-    public static function contains(string $haystack, string $word = null): bool
+    public static function contains(string $haystack, string $word): bool
     {
         if (str_contains($haystack, $word)) {
             return true;
@@ -122,10 +126,10 @@ class Strings
 
     /**
      * @param string $haystack
-     * @param string|null $prefix
+     * @param string $prefix
      * @return string
      */
-    public static function prefix(string $sentence, string $prefix = null): string
+    public static function prefix(string $sentence, string $prefix): string
     {
         $originalString = explode(" ", $sentence);
         $newString = explode(" ", $prefix);
@@ -136,10 +140,10 @@ class Strings
 
     /**
      * @param string $sentence
-     * @param string|null $suffix
+     * @param string $suffix
      * @return string
      */
-    public static function suffix(string $sentence, string $suffix = null): string
+    public static function suffix(string $sentence, string $suffix): string
     {
         $originalString = explode(" ", $sentence);
         $newString = explode(" ", $suffix);

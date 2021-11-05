@@ -23,7 +23,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="C:/php/php-8.0.6" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -50,6 +51,7 @@
       <workItem from="1635943541193" duration="4312000" />
       <workItem from="1636024148187" duration="12588000" />
       <workItem from="1636106533732" duration="9337000" />
+      <workItem from="1636135658593" duration="5056000" />
     </task>
     <servers />
   </component>
@@ -61,6 +63,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="598" y="313" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1020@0.0.1680.1020" timestamp="1635923762665" />
+    <state x="389" y="216" key="FileChooserDialogImpl" timestamp="1636147905955">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="389" y="216" key="FileChooserDialogImpl/0.0.1680.1020@0.0.1680.1020" timestamp="1636147905955" />
     <state x="523" y="324" key="NewPhpClassDialog" timestamp="1636112840320">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
@@ -69,6 +75,10 @@
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
     <state x="674" y="433" key="NewPhpFileDialog/0.0.1680.1020@0.0.1680.1020" timestamp="1636039257350" />
+    <state x="6" y="104" width="1206" height="715" key="SettingsEditor" timestamp="1636147915721">
+      <screen x="0" y="0" width="1680" height="1020" />
+    </state>
+    <state x="6" y="104" width="1206" height="715" key="SettingsEditor/0.0.1680.1020@0.0.1680.1020" timestamp="1636147915721" />
     <state x="536" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1636024185212">
       <screen x="0" y="0" width="1680" height="1020" />
     </state>
