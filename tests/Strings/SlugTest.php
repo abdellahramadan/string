@@ -3,7 +3,7 @@
 namespace App\Tests\Strings;
 
 use PHPUnit\Framework\TestCase;
-use App\String\Strings;
+use AbdellahRamadan\String\Strings;
 
 final class SlugTest extends TestCase
 {
