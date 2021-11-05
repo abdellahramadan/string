@@ -1,6 +1,6 @@
 {
   "name": "abdellahramadan/string",
-  "description": "This is a lightweight string manipulation library",
+  "description": "This is a lightweight string manipulation library for PHP",
   "license": "MIT",
   "authors": [
     {
@@ -10,6 +10,7 @@
       "role": "Developer"
     }
   ],
+  "keywords": ["string", "text", "slug", "utility", "utf-8"],
   "type": "library",
   "require": {
     "php": ">= 8.0"
