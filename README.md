@@ -2,7 +2,9 @@
 ***It is a work in progress and features will be added often***
 
 install with composer: <br>
-`composer require abdellahramadan/string`
+```
+composer require abdellahramadan/string
+```
 
 ```
 use AbdellahRamadan\String\Strings;
