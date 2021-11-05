@@ -16,6 +16,6 @@ final class SlugTest extends TestCase
     {
         $this->assertSame(Strings::slug('I am okay'), 'i-am-okay');
 
-        $this->assertEquals('this-is-a-string', Strings::slug('this-is-a-string'), 'String is the same');
+        $this->assertSame( Strings::slug('this-is-a-string'), 'this-is-a-string', 'String is not the same');
     }
 }
