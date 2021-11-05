@@ -1,11 +1,11 @@
-###This is a simple and lightweight String manipulation library
+### This is a simple and lightweight String manipulation library
 ***It is a work in progress and features will be added often***
 
 install with composer: <br>
 `composer require abdellahramadan/string`
 
 ```
-use AbdellahRamadan\String\Strings
+use AbdellahRamadan\String\Strings;
 ```
 **Slug a text**
 
