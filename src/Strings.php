@@ -20,7 +20,7 @@ class Strings
                 $sluggedText .=  $item . '-';
             }
 
-            $finalSlug = strtolower(substr_replace($sluggedText, "", -1));
+            $finalSlug = trim(strtolower(substr_replace($sluggedText, "", -1)));
 
         }
         return $finalSlug;
@@ -151,4 +151,37 @@ class Strings
 
         return $finalString;
     }
+
+    /**
+     * @param string $first
+     * @param string $second
+     * @return bool
+     */
+    public static function compare(string $first, string $second): bool
+    {
+        if (strcmp($first, $second) === 0) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    /**
+     * @param string $firstString
+     * @param string $secondString
+     * @return bool
+     */
+    public static function compareCaseInsentive(string $firstString, string $secondString): bool
+    {
+        $string1 = strtolower($firstString);
+        $string2 = strtolower($secondString);
+
+        if (strcmp($string1, $string2) === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
