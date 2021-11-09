@@ -13,16 +13,15 @@ class Strings
     {
         $slugItem = explode(" ", $text);
         $finalSlug = '';
-        if (count($slugItem) > 0) {
-            $sluggedText = '';
 
-            foreach ($slugItem as $item) {
-                $sluggedText .=  $item . '-';
-            }
+        $sluggedText = '';
 
-            $finalSlug = trim(strtolower(substr_replace($sluggedText, "", -1)));
-
+        foreach ($slugItem as $item) {
+            $sluggedText .=  $item . '-';
         }
+
+        $finalSlug = trim(strtolower(substr_replace($sluggedText, "", -1)));
+
         return $finalSlug;
     }
 
@@ -125,7 +124,7 @@ class Strings
     }
 
     /**
-     * @param string $haystack
+     * @param string $sentence
      * @param string $prefix
      * @return string
      */
@@ -182,6 +181,16 @@ class Strings
         } else {
             return false;
         }
+    }
+
+    /**
+     * @param string $string1
+     * @param string $string2
+     * @return string
+     */
+    public static function concat(string $string1, string $string2): string
+    {
+        return $string1 . ' ' . $string2;
     }
 
 }
