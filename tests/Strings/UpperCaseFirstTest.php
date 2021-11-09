@@ -10,7 +10,7 @@ class UpperCaseFirstTest extends TestCase
 {
     public function testAStringShouldStartWithUppercase()
     {
-        $this->assertSame(Strings::uppercaseFirst('i am a developer'), 'I am a developer');
+        $this->assertSame('I am a developer', Strings::uppercaseFirst('i am a developer'));
 
         $this->assertStringStartsWith('A', Strings::uppercaseFirst('a developer'));
     }
