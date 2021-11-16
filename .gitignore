@@ -1,4 +1,5 @@
 /.idea
+/.idea/workspace.xml
 /index.php
 /vendor
 /composer.lock

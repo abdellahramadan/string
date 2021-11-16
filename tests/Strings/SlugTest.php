@@ -14,8 +14,8 @@ final class SlugTest extends TestCase
 
     public function testAStringCanBeSlugged()
     {
-        $this->assertSame(Strings::slug('I am okay'), 'i-am-okay');
+        $this->assertSame(Strings::slug('I am- okay'), 'i-am-okay');
 
-        $this->assertSame( Strings::slug('this-is-a-string'), 'this-is-a-string');
+        $this->assertSame( Strings::slug('this is a string'), 'this-is-a-string');
     }
 }

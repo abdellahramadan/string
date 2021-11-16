@@ -16,13 +16,19 @@ class Strings
 
         $sluggedText = '';
 
-        foreach ($slugItem as $item) {
-            $sluggedText .=  $item . '-';
+        foreach ($slugItem as $word) {
+            $fullWord = '';
+
+            foreach (str_split($word) as $ch) {
+                if ($ch !== '-') {
+                    $fullWord .= $ch;
+                }
+            }
+
+            $sluggedText .=  $fullWord . '-';
         }
 
-        $finalSlug = trim(strtolower(substr_replace($sluggedText, "", -1)));
-
-        return $finalSlug;
+        return trim(strtolower(substr_replace($sluggedText, "", -1)));
     }
 
     /**
@@ -191,6 +197,26 @@ class Strings
     public static function concat(string $string1, string $string2): string
     {
         return $string1 . ' ' . $string2;
+    }
+
+    /**
+     * @param string $string
+     * @param int $offset
+     * @param int|null $length
+     * @return string
+     */
+    public static function subString(string $string, int $offset, ?int $length = null): string
+    {
+        return substr($string, $offset, $length);
+    }
+
+    /**
+     * @param string $string
+     * @return string
+     */
+    public static function reverse(string $string): string
+    {
+        return strrev($string);
     }
 
 }
